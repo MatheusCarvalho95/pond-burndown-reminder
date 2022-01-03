@@ -9,10 +9,10 @@ const endpoint = process.env.WEBHOOKENDPOINT;
 const api = axios.create({
   baseURL: endpoint,
 });
+
 const schedule = "0 13 * * 1-5";
 
 cron.schedule(schedule, async () => {
-  console.log(`schedule is up: ${schedule}`);
   await api.post("", {
     username: "Burndown time!!",
     avatar_url:
@@ -20,3 +20,5 @@ cron.schedule(schedule, async () => {
     content: ` @here , hora de alguém mandar um burndown pá nóix! `,
   });
 });
+
+console.log(`Schedule is up: "${schedule}" `);
