@@ -17,7 +17,7 @@ cron.schedule(schedule, async () => {
     username: "Burndown time!!",
     avatar_url:
       "https://cdn2.iconfinder.com/data/icons/scrum-project-blue/100/Burndown_chart-1024.png",
-    content: ` @here , hora de alguém mandar um burndown pá nóix! `,
+    content: ` @Pond Threads , hora de alguém mandar um burndown pá nóix! `,
   });
 });
 
